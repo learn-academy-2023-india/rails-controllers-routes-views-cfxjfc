@@ -8,7 +8,11 @@ Rails.application.routes.draw do
   get '/about', to: 'bidness#about'
   get '/contact', to: 'bidness#contact'
   get '/products', to: 'bidness#products'
-  
+  get '/main/cubed/:number', to: 'main#cubed'
+  get '/main/evenly/:num1/:num2', to: 'main#evenly'
+  get '/main/palindrome/:word', to: 'main#palindrome'
+  get '/main/random/:min/:max', to: 'main#random'
+  get '/main/madlib/:noun/:verb/:adjective/:adverb', to: 'main#madlib'
 
   # Defines the root path route ("/")
   # root "posts#index"
