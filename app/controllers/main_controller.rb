@@ -21,7 +21,7 @@ class MainController < ApplicationController
         @noun = params[:noun]
         @verb = params[:verb]
         @adjective = params[:adjective]
-        @adverb = params[:adverb]
+        @story = "I am a #{@adjective} #{@noun}, I like to #{@verb}. "
     end
 
 end

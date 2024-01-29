@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get '/main/evenly/:num1/:num2', to: 'main#evenly'
   get '/main/palindrome/:word', to: 'main#palindrome'
   get '/main/random/:min/:max', to: 'main#random'
-  get '/main/madlib/:noun/:verb/:adjective/:adverb', to: 'main#madlib'
+  get '/main/madlib/:noun/:verb/:adjective/', to: 'main#madlib'
 
   # Defines the root path route ("/")
   # root "posts#index"
